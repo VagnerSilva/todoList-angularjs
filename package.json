@@ -1,0 +1,27 @@
+{
+  "name": "todolist-angularjs",
+  "version": "1.0.0",
+  "description": "Criando todolist",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VagnerSilva/todoList-angularjs.git"
+  },
+  "keywords": [
+    "angularjs",
+    "todolist"
+  ],
+  "author": "Vagner Silva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VagnerSilva/todoList-angularjs/issues"
+  },
+  "homepage": "https://github.com/VagnerSilva/todoList-angularjs#readme",
+  "dependencies": {
+    "angular": "^1.6.10",
+    "ng-redux": "^4.0.3"
+  }
+}

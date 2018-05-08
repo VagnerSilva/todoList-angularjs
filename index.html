@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+
+<head>
+  <meta charset="utf-8">
+  <title>TODOList AngularJS</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+
+  <!-- Latest compiled and minified CSS -->
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+  <div class="g-row">
+    <div class="g-col">
+      <form class="task-form" (ngSubmit)="submit()" novalidate>
+        <input autocomplete="off" autofocus class="task-form__input" name="title" placeholder="What needs to be done?" required type="text">
+      </form>
+    </div>
+
+    <div class="g-col">
+
+      <ul class="task-filters">
+        <li>
+          <a href="/tasks" class="active">View All</a>
+        </li>
+        <li>
+          <a class="" href="/tasks;completed=true">Completed</a>
+        </li>
+        <li>
+          <a href="/tasks;completed=false" class="">Active</a>
+        </li>
+      </ul>
+
+      <div class="task-list">
+        <div class="task-item" tabindex="0">
+
+          <div class="cell">
+
+            <button aria-label="Mark task as completed" class="task-item__button" type="button">
+              <span class="icon material-icons">done</span>
+            </button>
+          </div>
+
+          <div class="cell">
+
+            <div class="task-item__title" tabindex="0">
+              rer -conteudo
+            </div>
+          </div>
+
+          <div class="cell">
+
+            <button aria-label="Edit task title" class="task-item__button" type="button">
+              <span class="icon material-icons">edit</span>
+            </button>
+
+            <button aria-label="Delete task" class="task-item__button" type="button">
+              <span class="icon material-icons">delete</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="node_modules/angular/angular.min.js"></script>
+  <script src="node_modules/ng-redux/lib/ng-redux.js"></script>
+
+  <script src="./js/controllers/todoList.js"></script>
+</body>
+
+</html>
