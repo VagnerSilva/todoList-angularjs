@@ -1,0 +1,33 @@
+
+
+*, :after, :before {
+    box-sizing: inherit;
+  }
+  
+  fieldset, legend, ol, td, th, ul {
+    padding: 0;
+  }
+  
+  ::selection {
+    background: rgba(200, 200, 255, .1);
+  }
+
+.g-col {
+    float: left;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+  }
+  
+  .g-row {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 810px;
+  }
+
+
+  button {
+    overflow: visible;
+    cursor: pointer;
+  }

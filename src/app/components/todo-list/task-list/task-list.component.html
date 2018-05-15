@@ -1,0 +1,26 @@
+<div class="g-row">
+    <div class="g-col">
+        <task-form create-task="taskList.actions.createTask(title)"></task-form>
+    </div>
+    <div class="g-col">
+
+        <ul class="task-filters">
+            <li>
+                <a>View All</a>
+            </li>
+            <li>
+                <a>Active</a>
+            </li>
+            <li>
+                <a>Completed</a>
+            </li>
+        </ul>
+        <div class="task-list">
+            <task-item task="task" 
+            delete-task="taskList.actions.removeTask(task)"
+            ng-repeat="task in taskList.tasks track by $index">
+                {{task}}
+            </task-item>
+        </div>
+
+    </div>
